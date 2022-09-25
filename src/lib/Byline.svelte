@@ -1,11 +1,13 @@
 <script>
     import { Card, Avatar } from 'agnostic-svelte'
+    export let imgSource = 'blank'
 </script>
 
 <section>
     <Card isBorder="{true}" isRounded="{true}">
       <div class="p16">
-        <Avatar imgUrl="https://media.gettyimages.com/photos/christopher-lee-british-actor-with-bloodshot-eyes-and-wearing-pale-picture-id119203148?s=612x612" size="xlarge"></Avatar>
+        <img style="height:200px;width:200px;border-radius:200px" alt="pic" src="{imgSource}">
+        <!--<Avatar imgUrl="https://media.gettyimages.com/photos/christopher-lee-british-actor-with-bloodshot-eyes-and-wearing-pale-picture-id119203148?s=612x612" size="xlarge"></Avatar>-->
       </div>
       <div class="p16 flex-grow-1 flex-shrink-1" style="flex-basis: 50ch;">
         The card comes with minimal
