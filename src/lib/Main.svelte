@@ -17,7 +17,6 @@
           </div>
       
           <footer>
-            
             <slot name="theByline"></slot>
           </footer>
         </div>
