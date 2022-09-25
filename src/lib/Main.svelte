@@ -1,26 +1,24 @@
 <script>
     import 'agnostic-svelte/css/common.min.css'
     import Counter from './Counter.svelte'
-    import Byline from './Byline.svelte';
-    export let title = 'blank';
-    export let mainBody = 'default';
-    export let byline = 'default';
+    
   </script>
   
     <main>
       
         <div class="container">
           <header>
-            <h1 class="myTitle">{title}</h1>
+            <h1 class="myTitle"><slot name="theTitle"></slot></h1>
+            
           </header>
       
           <div class="mainStuff">
-            {@html mainBody}
-            
+            <slot name="theBody"></slot>
           </div>
       
           <footer>
-            <Byline imgSource={byline}/>
+            
+            <slot name="theByline"></slot>
           </footer>
         </div>
       <Counter count={5}>

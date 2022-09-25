@@ -1,10 +1,12 @@
 <script>
 import Main from '../Main.svelte'
-let props = {
-    title: "birds page",
-    mainBody: "this is the birds page",
-    byline: "https://media.gettyimages.com/photos/christopher-lee-british-actor-with-bloodshot-eyes-and-wearing-pale-picture-id119203148?s=612x612"
-}
+import Byline from '../Byline.svelte';
 </script>
 
-<Main {...props}/>
+
+
+<Main>
+<span slot="theTitle">birds page</span>
+<span slot="theBody">this is the birds page</span>
+<span slot="theByline"><Byline imgSource={'https://media.gettyimages.com/photos/christopher-lee-british-actor-with-bloodshot-eyes-and-wearing-pale-picture-id119203148?s=612x612'}/></span>
+</Main>
