@@ -13,7 +13,7 @@
         something I have spent decades doing dating back to studies on the Soviet Union, and it is something you are
         going to begin doing tonight.
         It is not an outlandish thing to say a conspiracy theory exists and they are fairly common. Follow along the
-        clues I have laid out for you, and maybe... just maybe... you will uncover the truth.</p></span>
+        clues I have laid out for you, and maybe... just maybe... you will uncover the <strong style="font-size:2em;"><em>truth</em></strong>.</p></span>
     <span slot="theByline">
         <Byline imgSource={'https://ichef.bbci.co.uk/images/ic/1920x1080/p098vq4z.jpg'}> <span slot="bylineText">My actions were not an attack on this country. That is incorrect. That is inaccurate, entirely.
             Well, I sang a song. And that's a part of shamanism. It's about-- creating positive vibrations in a sacred chamber.
