@@ -1,10 +1,11 @@
 <script>
     import Main from '../Main.svelte'
     import Byline from '../Byline.svelte';
+    let x = ''
 </script>
-
+{#if x.toUpperCase() == 'CODE'}
 <Main>
-    <span slot="theTitle">Q Shaman Intro</span>
+    <span slot="theTitle">Intro</span>
     <span slot="theBody"><p>I am here to reclaim the term "conspiracy theory". The term conspiracy theory has been
         weaponized against individuals searching for the truth, individuals like you and me. It has limited the range of
         subjects that we discuss, and has allowed powerful actors to escape accountability. They are dismissing
@@ -29,3 +30,7 @@
     </Byline>
     </span>
 </Main>
+{:else}
+    <p>Each page will have a clue embedded, to unlock the next page you must determine the clue from the previous page, the clue for this first page is <br><br><strong style="font-size:1.5em;">code</strong></p>
+    <input bind:value={x}>
+{/if}

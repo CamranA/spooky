@@ -1,6 +1,5 @@
 <script>
     import 'agnostic-svelte/css/common.min.css'
-    import Counter from './Counter.svelte'
     
   </script>
   
@@ -20,8 +19,6 @@
             <slot name="theByline"></slot>
           </footer>
         </div>
-      <Counter count={5}>
-      </Counter>
       </main>
       
       <style>
