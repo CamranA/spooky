@@ -31,6 +31,6 @@
     </span>
 </Main>
 {:else}
-    <p>Each page will have a clue embedded, to unlock the next page you must determine the clue from the previous page, the clue for this first page is <br><br><strong style="font-size:1.5em;">code</strong></p>
+    <p>Each page will have a clue embedded (not case sensitive), to unlock the next page you must determine the clue from the previous page. The clue for this first page is <br><strong style="font-size:1.5em;">code</strong> (type "code" in the box)</p>
     <input bind:value={x}>
 {/if}
