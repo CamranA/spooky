@@ -5,7 +5,7 @@
 </script>
 {#if x.toUpperCase() == 'MATRIX'}    
 <Main>
-    <span slot="theTitle">Simulation</span>
+    <span slot="theTitle">It's All A Simulation</span>
     <span slot="theBody"><p>I imagine that right now, you’re feeling a bit like Alice. Hmm? Tumbling down the rabbit hole? … 
         I see it in your eyes. You have the look of a person who accepts what they see because they are expecting to wake up. Ironically, that’s not far from the truth. 
         Do you believe in fate? … I know exactly what you mean. Let me tell you why you’re here. You’re here because you know something. What you know you can’t explain, but you feel it. 
