@@ -1,9 +1,9 @@
 <script>
     import 'agnostic-svelte/css/common.min.css'
-    import {fade} from 'svelte/transition'
+    import { blur } from 'svelte/transition'
   </script>
   
-    <main in:fade>
+    <main in:blur>
       
         <div class="container">
           <header>
