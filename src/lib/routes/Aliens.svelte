@@ -1,7 +1,7 @@
 <script>
     import Main from '../Main.svelte'
     import Byline from '../Byline.svelte'
-    let x = ''
+    let x = localStorage.getItem('Aliens') || ''
 </script>
 {#if x.toUpperCase() == 'REDPILL' || x.toUpperCase() == 'RED PILL'}    
 <Main>
@@ -21,7 +21,7 @@
         The next thing I know, I open my eyes and see nothing but the night sky full of bright stars - it was a cold night, and it seemed like I had never seen stars that bright in my life. 
         I sat up and looked around, and I saw the signs, Area 51.
     
-        Not only is Area 51 real, but its run by the aliens. This must be why they try so hard to protect it. I pick up a pamphlet from a nearby table about their home base, the Moon. 
+        Not only is Area 51 real, but its run by the aliens. This must be why they try so hard to protect it. I searched the area and found Majorie's plans for the Jewish Space Lasers, so thats how she knew about it... She created them. I then picked up a pamphlet from a nearby table about their home base, the Moon. 
         This entire time they have been hiding on the Moon in plain sight, orchestrating everything from afar. Humans have allegedly travelled to the moon, but if the aliens are up there... Does that mean the moon landing was FAKE?
         Only one way to find out...</p>
     </span>
@@ -34,5 +34,5 @@
 </Main>
 {:else}
     <p>Enter the code below, it is contained on the previous page.</p>
-    <input bind:value={x}>
+    <input bind:value={x} on:change={() => localStorage.setItem('Aliens', x)}>
 {/if}

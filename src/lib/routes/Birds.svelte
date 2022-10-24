@@ -1,7 +1,7 @@
 <script>
     import Main from '../Main.svelte'
     import Byline from '../Byline.svelte';
-    let x = ''
+    let x = localStorage.getItem('Birds') || ''
 </script>
 
 
@@ -45,5 +45,5 @@
 </Main>
 {:else}
     <p>Enter the code below, it is contained on the previous page.</p>
-    <input bind:value={x}>
+    <input bind:value={x} on:change={() => localStorage.setItem('Birds', x)}>
 {/if}

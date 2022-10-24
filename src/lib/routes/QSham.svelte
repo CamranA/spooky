@@ -1,10 +1,16 @@
 <script>
     import Main from '../Main.svelte'
     import Byline from '../Byline.svelte';
-    let x = ''
+    let x = localStorage.getItem('QSham') || ''
+    function resetLocalStor() {
+        localStorage.clear()
+        location.reload()
+    }
 </script>
 {#if x.toUpperCase() == 'CODE'}
+<button on:click|once={resetLocalStor}>Reset Game</button>
 <Main>
+    
     <span slot="theTitle">Intro</span>
     <span slot="theBody"><p>I am here to reclaim the term "conspiracy theory". The term conspiracy theory has been
         weaponized against individuals searching for the truth, individuals like you and me. It has limited the range of
@@ -32,5 +38,5 @@
 </Main>
 {:else}
     <p>Each page will have a clue embedded (not case sensitive), to unlock the next page you must determine the clue from the previous page. The clue for this first page is <br><strong style="font-size:1.5em;">code</strong> (type "code" in the box)</p>
-    <input bind:value={x}>
+    <input bind:value={x} on:change={() => localStorage.setItem('QSham', x)}>
 {/if}

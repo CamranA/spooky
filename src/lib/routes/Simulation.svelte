@@ -1,7 +1,7 @@
 <script>
     import Main from '../Main.svelte'
     import Byline from '../Byline.svelte'
-    let x = ''
+    let x = localStorage.getItem('Simulation') || ''
 </script>
 {#if x.toUpperCase() == 'MATRIX'}    
 <Main>
@@ -29,5 +29,5 @@
 </Main>
 {:else}
     <p>Enter the code below, it is contained on the previous page.</p>
-    <input bind:value={x}>
+    <input bind:value={x} on:change={() => localStorage.setItem('Simulation', x)}>
 {/if}
