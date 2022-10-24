@@ -33,7 +33,7 @@
             "header"
             "main"
             "footer";
-          grid-template-rows: .4fr 1fr .4fr;
+          grid-template-rows: auto;
           gap: var(--fluid-12);
         }
       
