@@ -8,7 +8,7 @@
     }
 </script>
 {#if x.toUpperCase() == 'CODE'}
-<button on:click|once={resetLocalStor}>Reset Game</button>
+<button on:click|once={resetLocalStor}>GDPR Compliance Button</button>
 <Main>
     
     <span slot="theTitle">Intro</span>
