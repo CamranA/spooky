@@ -9,15 +9,7 @@
   import Moon from './lib/routes/Moon.svelte'
   import Simulation from './lib/routes/Simulation.svelte'
 </script>
-<ul>
-  <li style="display:inline;"><a href="./">Home</a></li>
-  <li style="display:inline;"><a href="./#/Birds">Birds</a></li>
-  <li style="display:inline;"><a href="./#/nine11">9/11</a></li>
-  <li style="display:inline;"><a href="./#/QShaman">QShaman</a></li>
-  <li style="display:inline;"><a href="./#/Aliens">Aliens</a></li>
-  <li style="display:inline;"><a href="./#/Moon">Fake Moon</a></li>
-  <li style="display:inline;"><a href="./#/Simulation">Simulation</a></li>
-</ul>
+
 <Router routes={{
   '/': Home,
   '/Birds': Birds,
