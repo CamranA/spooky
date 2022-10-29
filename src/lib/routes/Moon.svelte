@@ -19,7 +19,7 @@
         </p>
         <strong style="font-size:2em;">When you walk in golden halls
         You get to keep the gold that falls</strong><br>
-        <strong style="font-size:2em;">11-22-33</strong>
+        <strong style="font-size:2em;">069</strong>
     </span>
     <span slot="theByline"><Byline imgSource={'https://cdn.mos.cms.futurecdn.net/464QUPXKVDdmNDACrDzxtj.jpg'}>
         <span slot="bylineText">
