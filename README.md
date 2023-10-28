@@ -48,3 +48,6 @@ export default writable(0)
 ```
 
 [How to deploy this](https://hrishikeshpathak.com/blog/svelte-gh-pages/)
+
+npm run build
+npm run deploy
