@@ -8,6 +8,9 @@
   import Aliens from './lib/routes/Aliens.svelte'
   import Moon from './lib/routes/Moon.svelte'
   import Simulation from './lib/routes/Simulation.svelte'
+  import one from './lib/routes/one.svelte'
+  import two from './lib/routes/two.svelte'
+  import three from './lib/routes/three.svelte'
 </script>
 
 <Router routes={{
@@ -18,5 +21,8 @@
   '/Aliens': Aliens,
   '/Moon': Moon,
   '/Simulation': Simulation,
+  '/one': one,
+  '/two': two,
+  '/three': three,
 }}/>
 
