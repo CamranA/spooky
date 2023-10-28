@@ -7,7 +7,7 @@
         location.reload()
     }
 </script>
-{#if x.toUpperCase() == 'start'}
+{#if x.toUpperCase() == 'START'}
 <button on:click|once={resetLocalStor}>GDPR Compliance Button</button>
 <Main>
     <span slot="theTitle">Aliens</span>
