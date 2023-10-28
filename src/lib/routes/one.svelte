@@ -39,6 +39,6 @@
     </span>
 </Main>
 {:else}
-    <p>Each page will have a number for the combination of the weapons safe, when you are ready to begin type "start" in the box below.</p>
+    <p>Each page will have a number for the combination of the weapons safe they are in order (first page is first digit, second is second digit, etc.), when you are ready to begin type "start" in the box below.</p>
     <input bind:value={x} on:change={() => localStorage.setItem('Start', x)}>
 {/if}
